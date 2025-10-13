@@ -1,0 +1,13 @@
+本地仓库、暂存区
+
+使用 git add 添加文件进入暂存区
+git status 查看文件状态
+
+git commit -m 把暂存区的文件正式提交到本地仓库	
+git commit -m '本次提交的注释信息' 
+
+
+
+git config --global user.name "用户名" 
+git config --global user.email "你的电子邮箱"
+

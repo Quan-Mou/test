@@ -7,6 +7,16 @@
        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
 
-    
+    <util:list id="aihao" >
+        <value>篮球</value>
+        <value>足球</value>
+    </util:list>
+
+
+    <bean id="userService" class="com.quan.spring.service.UserService" >
+        <property name="aiHao" ref="aihao"/>
+    </bean>
+
+
 
 </beans>

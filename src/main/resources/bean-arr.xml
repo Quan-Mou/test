@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="userService" class="com.quan.spring.service.UserService">
+        <property name="aiHao">
+            <array>
+                <value>丹道</value>
+                <value>篮球</value>
+                <value>音乐</value>
+            </array>
+        </property>
+
+        <property name="good">
+            <array>
+                <ref bean="car"/>
+            </array>
+        </property>
+    </bean>
+
+    <bean id="car" class="com.quan.spring.bean.Goods">
+        <property name="name" value="兰博基尼"/>
+        <property name="price" value="10"/>
+    </bean>
+</beans>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!--    <bean id="FirstSpringBean" class="com.quan.spring.CustomerMySqlDataSource">-->
+
+<!--&lt;!&ndash;        <property name="user" ref="userBean"></property>&ndash;&gt;-->
+<!--        <constructor-arg ref="userBean"></constructor-arg>-->
+<!--        <constructor-arg index="0" ref="userBean"></constructor-arg>-->
+<!--        <constructor-arg name="user" ref="userBean"></constructor-arg>-->
+<!--    </bean>-->
+
+
+<!--    <bean id="userBean" class="com.quan.spring.bean.User"></bean>-->
+
+
+
+
+
+    <bean id="FirstSpringBean" class="com.quan.spring.CustomerMySqlDataSource">
+                <property name="user" ref="userBean">
+                </property>
+
+    </bean>
+
+
+    <bean id="userBean" class="com.quan.spring.bean.User">
+        <property name="age" value="18"></property>
+    </bean>
+
+</beans>

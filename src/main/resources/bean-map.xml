@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="userService" class="com.quan.spring.service.UserService">
+
+        <property name="friends">
+            <map>
+                <entry key="YangXi" value="300"></entry>
+                <entry key="XuMi" value="120"></entry>
+                <entry key="FuQiuZi" value="89"></entry>
+            </map>
+        </property>
+<!--         map的Value注入对象类型用 value-ref-->
+        <property name="house">
+            <map>
+                <entry key="1" value-ref="house1"/>
+                <entry key="2" value-ref="house2"/>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="house1" class="com.quan.spring.bean.House">
+        <property name="name" value="海景房"/>
+        <property name="address" value="云南大理"/>
+    </bean>
+    <bean id="house2" class="com.quan.spring.bean.House">
+        <property name="name" value="四合院"/>
+        <property name="address" value="北京"/>
+    </bean>
+</beans>

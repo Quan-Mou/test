@@ -6,13 +6,13 @@
     <bean id="userService" class="com.quan.spring.service.UserService" autowire="byType">
     </bean>
 
-    <bean id="user2" class="com.quan.spring.bean.User">
+    <bean id="user" class="com.quan.spring.bean.User">
         <property name="name" value="菩提本无树，明镜亦非台"/>
         <property name="age" value="1"/>
     </bean>
 
-    <bean id="user" class="com.quan.spring.bean.User">
-        <property name="name" value="六祖慧能"/>
-        <property name="age" value="30"/>
-    </bean>
+<!--    <bean id="user" class="com.quan.spring.bean.User">-->
+<!--        <property name="name" value="六祖慧能"/>-->
+<!--        <property name="age" value="30"/>-->
+<!--    </bean>-->
 </beans>

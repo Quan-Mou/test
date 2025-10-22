@@ -1,4 +1,4 @@
-package com.quan.spring.bean;
+package com.quan.spring.ioc.bean;
 
 public class Goods {
 

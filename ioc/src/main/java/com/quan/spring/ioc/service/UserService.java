@@ -1,8 +1,10 @@
-package com.quan.spring.service;
+package com.quan.spring.ioc.service;
 
-import com.quan.spring.bean.Goods;
-import com.quan.spring.bean.House;
-import com.quan.spring.bean.User;
+
+
+import com.quan.spring.ioc.bean.Goods;
+import com.quan.spring.ioc.bean.House;
+import com.quan.spring.ioc.bean.User;
 
 import java.util.Arrays;
 import java.util.Map;

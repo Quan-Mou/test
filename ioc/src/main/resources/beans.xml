@@ -19,14 +19,14 @@
 
 
 
-    <bean id="FirstSpringBean" class="com.quan.spring.CustomerMySqlDataSource">
+    <bean id="FirstSpringBean" class="com.quan.spring.ioc.CustomerMySqlDataSource">
                 <property name="user" ref="userBean">
                 </property>
 
     </bean>
 
 
-    <bean id="userBean" class="com.quan.spring.bean.User">
+    <bean id="userBean" class="com.quan.spring.ioc.bean.User">
         <property name="age" value="18"></property>
     </bean>
 

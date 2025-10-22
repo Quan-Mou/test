@@ -3,5 +3,5 @@
        xmlns:c="http://www.springframework.org/schema/c"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="orderService" class="com.quan.spring.service.OrderService" c:name="面包"></bean>
+    <bean id="orderService" class="com.quan.spring.ioc.service.OrderService" c:name="面包"></bean>
 </beans>

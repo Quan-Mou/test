@@ -3,10 +3,10 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="userService" class="com.quan.spring.service.UserService" autowire="byType">
+    <bean id="userService" class="com.quan.spring.ioc.service.UserService" autowire="byType">
     </bean>
 
-    <bean id="user" class="com.quan.spring.bean.User">
+    <bean id="user" class="com.quan.spring.ioc.bean.User">
         <property name="name" value="菩提本无树，明镜亦非台"/>
         <property name="age" value="1"/>
     </bean>

@@ -1,4 +1,4 @@
-package com.quan.spring.service;
+package com.quan.spring.ioc.service;
 
 public class OrderService {
 

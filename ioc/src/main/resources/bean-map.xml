@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="userService" class="com.quan.spring.service.UserService">
+    <bean id="userService" class="com.quan.spring.ioc.service.UserService">
 
         <property name="friends">
             <map>
@@ -21,11 +21,11 @@
         </property>
     </bean>
 
-    <bean id="house1" class="com.quan.spring.bean.House">
+    <bean id="house1" class="com.quan.spring.ioc.bean.House">
         <property name="name" value="海景房"/>
         <property name="address" value="云南大理"/>
     </bean>
-    <bean id="house2" class="com.quan.spring.bean.House">
+    <bean id="house2" class="com.quan.spring.ioc.bean.House">
         <property name="name" value="四合院"/>
         <property name="address" value="北京"/>
     </bean>

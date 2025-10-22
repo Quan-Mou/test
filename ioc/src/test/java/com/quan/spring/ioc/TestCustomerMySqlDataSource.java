@@ -1,8 +1,9 @@
-package com.quan.spring;
+package com.quan.spring.ioc;
 
-import com.quan.spring.bean.User;
-import com.quan.spring.service.OrderService;
-import com.quan.spring.service.UserService;
+
+import com.quan.spring.ioc.bean.User;
+import com.quan.spring.ioc.service.OrderService;
+import com.quan.spring.ioc.service.UserService;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

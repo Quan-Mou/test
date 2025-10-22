@@ -13,7 +13,7 @@
     </util:list>
 
 
-    <bean id="userService" class="com.quan.spring.service.UserService" >
+    <bean id="userService" class="com.quan.spring.ioc.service.UserService" >
         <property name="aiHao" ref="aihao"/>
     </bean>
 

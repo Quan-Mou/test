@@ -1,6 +1,7 @@
-package com.quan.spring;
+package com.quan.spring.ioc;
 
-import com.quan.spring.bean.User;
+
+import com.quan.spring.ioc.bean.User;
 
 public class CustomerMySqlDataSource {
 

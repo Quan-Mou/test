@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user1" class="com.quan.cycle.bean.User" init-method="beanInit" destroy-method="beanDestroy">
+        <property name="name" value="双级型TTL"/>
+    </bean>
+    <bean id="beanPostProcessorHandler" class="com.quan.cycle.BeanPostProcessorHandler"></bean>
+</beans>

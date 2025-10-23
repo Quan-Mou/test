@@ -11,6 +11,8 @@ import java.util.Map;
 
 public class UserService {
 
+
+
     private String[] aiHao;
 
     private Goods[] good;
@@ -38,6 +40,7 @@ public class UserService {
     }
 
     public UserService() {
+        System.out.println("UserService 无参构造执行了");
     }
     public UserService(String[] aiHao) {
         this.aiHao = aiHao;

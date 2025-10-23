@@ -12,6 +12,24 @@ public class TestCustomerMySqlDataSource {
 
 
     @Test
+    public void testSimpleFactory() {
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("bean-instance.xml");
+        User user = applicationContext.getBean("userFactory", User.class);
+        System.out.println(user);
+    }
+
+    @Test
+    public void testScope() {
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("bean-scope.xml");
+        UserService userService1 = applicationContext.getBean("userService", UserService.class);
+        System.out.println(System.identityHashCode(userService1));
+
+        UserService userService2 = applicationContext.getBean("userService", UserService.class);
+        System.out.println(System.identityHashCode(userService2));
+    }
+
+
+    @Test
     public void testAutoWireByType() {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("bean-autowireByType.xml");
         UserService userService = applicationContext.getBean("userService", UserService.class);

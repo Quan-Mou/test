@@ -4,6 +4,10 @@ public class User {
     private String name;
     private Integer age;
 
+    public User() {
+        System.out.println("User调用无参构造了");
+    }
+
     public void setName(String name) {
         this.name = name;
     }

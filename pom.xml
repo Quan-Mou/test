@@ -13,6 +13,8 @@
         <module>factory-design-pattern</module>
         <module>ioc</module>
         <module>bean-life-cycle</module>
+        <module>cycle-depend</module>
+        <module>myspring</module>
     </modules>
 
     <dependencies>

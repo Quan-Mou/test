@@ -14,7 +14,7 @@ public class TestCustomerMySqlDataSource {
     @Test
     public void testSimpleFactory() {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("bean-instance.xml");
-        User user = applicationContext.getBean("userFactory", User.class);
+        User user = applicationContext.getBean("userFactory1", User.class);
         System.out.println(user);
     }
 

@@ -16,6 +16,7 @@
         <module>cycle-depend</module>
         <module>myspring</module>
         <module>ioc-annotation</module>
+        <module>static-proxy</module>
     </modules>
 
     <dependencies>
